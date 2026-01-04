@@ -1,5 +1,6 @@
 {
-  "name": "gruppenplanerapp",
+  "name": "my-react-starter",
+  "description": "TanStack React starter template with Auth, Tailwind CSS, Convex",
   "private": true,
   "type": "module",
   "scripts": {
