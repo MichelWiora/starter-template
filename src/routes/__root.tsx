@@ -14,6 +14,7 @@ import appCss from '@/styles.css?url'
 import { authClient } from '@/lib/auth-client'
 import { getToken } from '@/lib/auth-server'
 import { createServerFn } from '@tanstack/react-start'
+import Navigation from '@/components/Navigation'
 
 const getAuth = createServerFn({ method: 'GET' }).handler(async () => {
   return await getToken()
@@ -74,7 +75,8 @@ function RootDocument({ children }: { children: React.ReactNode }) {
       <head>
         <HeadContent />
       </head>
-      <body className="bg-neutral-950 text-neutral-50">
+      <body className="bg-background text-foreground">
+        <Navigation />
         {children}
         <Scripts />
       </body>
